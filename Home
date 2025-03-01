@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text.css" href="Home.css">
+    <title>Document</title>
+    <style>
+      .ArsenalPages{
+        text-align:right;
+      }
+      .Arsenal{
+        background-color: red;
+      }
+      .ArsenalBrand{
+
+      }
+      .AresnalLogo{
+        text-align: left;
+      }
+      .Pages{
+        text-align: right;
+        border-style: dotted;
+        
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="ArsenalPages">
+      <button class="Market" href="Market.html"><h2>ONLINE SHOP</h2></button>
+      <button class="AboutUs" href="AboutUs.html"><h2>HOSPITALITY</h2></button>
+      <button class="Ticket" href="Ticket.html"><h2>STADIUM TICKETS</h2></button>
+      <button class="Matches" href="Matches.html"><h2>MATCHES</h2></button>
+    </div>
+    <div class="Arsenal">
+      <nav class="ArsenaLogo">
+        <div class="ArsenalBrand">
+          <div class="ArsenalLogo">
+           <img src="Arsenalreallogo.png" alt="Logo" width="300" height="250">
+           <span class="Pages">
+             <nav class="HOME">
+              <a class="Page1" href="Home.html"><button ><h3>HOME</h3></button></a>e navigation">
+              <a class="News1" href="News.html"><button><h3>NEWS</h3></button></a>
+              <a class="Teamsarsenal" href="Teams.html"><button><h3>TEAMS</h3></button></a>
+              <a class="FixturesAndResults" href="FixturesAndResults.html"><button><h3>FIXTURES & RESULTS</h3></button></a>
+              <a class="Tickets" href="Tickets.html"><button><h3>TICKETS</h3></button></a>
+             </nav>
+           </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>About Us</h2>
+    <p>Arsenal Football Club is a proffesional football club based in London, England. The club was foundedin 1886 and has won 13 league titles, 14 FA Cups and 7 FA Community Shields</p>
+     <h2>Latest News</h2>
+     <ul>
+        <li>Player X signs new contract with the club</li>
+        <li>Manager Y appointed as new head coach</li>
+        <li>Club to play in Europa Leaguenext season</li>
+     </ul>
+
+    <h2>Upcoming Matches</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Opponent</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>14/20/2023</td>
+            <td>Chelsea</td>
+            <td>Emirates Stadium</td>
+        </tr>
+        <tr>
+            <td>10/02/2023</td>
+            <td>Manchester City</td>
+            <td>Eithad Stadium</td>
+        </tr>
+        <tr>
+            <td>21/02/2023</td>
+            <td>Manchester United</td>
+            <td>Old Trafford</td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <p>&copy;2025 Arsenal Football Clu. All rights reserved.</p>
+</footer>
+</body>
+</html>
