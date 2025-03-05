@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="styles.css" href="Home.css">
+    <title>Document</title>
+    <style>
+      .ArsenalPages{
+        text-align:center;
+        background-color: aliceblue;
+        text-emphasis-color: red;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .Arsenal{
+        background-color: red;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .ArsenalBrand{
+        font:bold;
+      }
+      .AresnalLogo{
+        text-align: left;
+      }
+      .Pages{
+        text-align: right;
+        border-style: dotted; 
+        background-color:brown;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .MainPage1{
+        background-image:url("trophy.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin:0;
+        overflow: hidden
+      }
+      .MainTitle{
+        color:aliceblue;
+        text-size-adjust:inherit;
+      }
+      .Attractor{
+        color:aliceblue;
+      }
+      .footer{
+        background-color: black;
+        color:aliceblue;
+        text-align:right;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="ArsenalPages">
+      <a href="Market.html"><button><h4>ONLINE SHOP</h4></button></a>
+      <a href="ARSENAL.html"><button><h4>ABOUT US</h4></button></a>
+      <a href="Teckets.html" ><button><h4>STADIUM TICKETS</h4></button></a>
+      <a href="Matches.html" ><button><h4>MATCHES</h4></button></a>
+      <a href="ARSENAL.html" ><button><h4>SIGN UP</h4></button></a>
+      <label for="search"><h2>search:<h4></h4></label>
+      <input type="text" id="search" name="search">
+    </div>
+    <div class="Arsenal">
+      <nav class="ArsenaLogo">
+        <div class="ArsenalBrand">
+          <div class="ArsenalLogo">
+           <img src="Arsenalreallogo.png" alt="Logo" width="250" height="250">
+            <span class="Pages">
+             <nav class="HOME">
+              <a href="Home.html"><button><h4>HOME</h4></button></a>
+              <a href="News.html"><button><h4>NEWS</h4></button></a>
+              <a href="Teams.html"><button><h4>TEAMS</h4></button></a>
+              <a href="Gallery.html"><button><h4>GALLERY</h4></button></a>
+              <a href="Matches.html"><button><h4>TICKETS</h4></button></a>
+             </nav>
+           </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="MainPage1">
+     <h1 class="MainTitle">Arsenal FC</h1><br>
+     <br>
+     <br>
+     <div class="Attractor">
+      <h2>WATCH ARSENALGAMES IN VR!</h2>
+      <br>
+     </div>
+     <div class="WatchLive">
+      <a href="Onlinematch.html"><button> <h2>Watch Now</h2></button></a>
+     </div>
+    </div>
+  </main>
+
+<footer>
+  <div class="footer">
+   <a href="Matches.html"><button><h2>Next Match</h2></button></a>
+   <div class="Matches">
+    <table>
+     <tr>
+      <td>
+       <img src="Arsenalreallogo.png" width="50" height="50">
+      </td>
+      <td rowspan="2"><h2> VS </h2></td>
+      <td>
+        <img src="liverpool.jpg" width="50" height="50">
+      </td>
+     </tr>
+     <tr>
+      <td> Arsenal</td>
+      <td>Liverpool</td>
+     </tr>
+    </table>
+   </div>
+   <h2>Europe League</h2>
+   <h2>Thursday April 11 -20:00</h2>
+  </div>
+    <p>&copy;202
+      5 Arsenal Football Clu. All rights reserved.</p>
+  
+</footer>
+<script>
+  var container=document.createElement("div");
+  for (var i=0; i<10; i++){
+    var letter=document.createElement("span");
+    letter.innerHTML = String.fromCharCode(65 + (Math.random()*26));
+    container.appendChild(letter);
+  }
+  document.body.appendChild(container);
+  var letters= container.getElemntsByTagName("span");
+  for (var i = 0;i<lettters.length;i++){
+    var letter=letters[i];
+    letter.style.position="absolute";
+    letter.style.top=Math.random()*windowinnerHeight + "px";
+    letter.style.left=Math.random()*windowinnerWidth + "px";
+    letter.style.transform="rotate("+Math.random()*360 + "deg)";
+  }
+
+ var buttons =document.getElementsByTagNmae("button");
+ for (var i = 0; i<buttons.length;i++){
+  buttons[i].addEventListener("click",function(){
+    var url = this.getAttribute("data-url");
+    window.location.href=url;
+  });
+ }
+</script>
+</body>
+</html>
