@@ -1,0 +1,40 @@
+/* Arsenal Theme Colors */
+body {
+    background-color: #e50000; /* Arsenal Red */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+/* Arsenal Logo */
+.arsenal-logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: black;
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+}
+
+/* Register Button */
+.btn-register {
+    background-color: #fff;
+    color: #e50000;
+    font-weight: bold;
+    padding: 0%;
+}
