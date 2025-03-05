@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tickets</title>
+    <style>
+        .heading{
+            color:red;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+        }
+        form{
+            text-align: center;
+            color: brown;
+        }
+        .tickets{
+            background-image: url(Arsenalfunding.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70vh;
+            margin: 0;
+            overflow: hidden;
+            color: aliceblue;
+            -ms-text-combine-horizontal: calc(content(center));
+        }
+        .Submit.{
+            text-align: center;
+            align-items: center;
+        }
+        .Submitt{
+            align-items: center;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header class="heading">
+    <h1><b>TICKETS AVAILABLE!</b></h1><br>
+    <h3>SIGN UP FOR A TICKET</h3>
+    </header>
+    <main>
+     <form>
+        <div class="tickets">
+            <div>
+             <label  for="Match"><h2>Match</h2></label><br><input type="text" class="Match" id="Match" placeholder="Enter the Match " required></div>
+           <br><br>
+          
+          <div><label for="email"><h2>Email</h2></label><br>
+          <input type="text" class="email" id="email" placeholder="Enter you email" required>
+          </div>
+          <br><br>
+          <div><label for="Payment"><h2>Payment</h2></label><br>
+          <input type="text" class="payment" id="PAYMENT" placeholder="Enter the mode of payment" required></div>
+          <br><br>
+          <div>
+          <label for="Amount"><h2>Amount=50,000</h2></label><br>
+          <input type="currency" class="Amount" id="AMOUNT" placeholder="Enter the Amount"></div>
+          <br><br>
+        </div>
+     </form> 
+    </main>
+    <footer>
+        <div class="Submit.">
+            <a href="Submit.html" class="Submitt" ><button><h1>Confirm Payment</h1></button></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
